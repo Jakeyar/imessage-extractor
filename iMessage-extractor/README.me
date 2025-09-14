@@ -1,0 +1,31 @@
+iMessage Extractor (.me)
+
+A Python utility to export and analyze iMessage conversations from macOS databases.
+Connects to the local iMessage SQLite database (chat.db), extracts conversations, and exports to text/CSV.
+
+Features
+- Extract conversations by contact or date range
+- Export messages to plain text or CSV
+- Optional feature flags:
+  - NORTH_AMERICA_ONLY: limit to +1 numbers
+  - SKIP_SHORT_CODES: skip 2FA/marketing short codes
+  - SEARCH_ALTERNATIVE_LOCATIONS: scan extra database locations
+
+Requirements
+- Python 3.9+ on macOS
+- Uses only standard library modules
+
+Install
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install -r requirements.txt
+
+Usage
+  python iMessage-extractor.py
+
+Notes
+- Exports default to a folder named 'iMessageExport' in the project directory.
+- Avoid committing private databases or exports to your repository.
+
+License
+- MIT (see LICENSE)

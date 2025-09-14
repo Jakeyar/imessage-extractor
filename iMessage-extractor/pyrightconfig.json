@@ -1,0 +1,8 @@
+{
+  "typeCheckingMode": "basic",
+  "reportRedeclaration": "none",
+  "reportAttributeAccessIssue": "none",
+  "reportArgumentType": "none",
+  "reportIndexIssue": "none",
+  "exclude": ["**/__pycache__"]
+}
